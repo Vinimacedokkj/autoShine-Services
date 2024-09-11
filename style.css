@@ -35,7 +35,7 @@ header .logo img {
 
 header .nav-bar {
   border: 2px solid red;
-  width: 40%;
+  width: 50%;
   height: 100%;
   overflow: hidden;
   display: flex;
