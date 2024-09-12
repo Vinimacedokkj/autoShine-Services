@@ -10,6 +10,7 @@ body {
   font-family: "Quicksand", sans-serif;
 }
 
+/*------------CABEÇALHO------------*/
 header {
   border: 2px solid orange;
   display: flex;
@@ -70,6 +71,7 @@ header .nav-bar nav ul li a {
   color: #fff;
 }
 
+/*------------INÍCIO------------*/
 main {
   border: 4px solid royalblue;
   height: 100vh;  
@@ -148,4 +150,30 @@ main .btn-right {
 main .home-background .arrow {
   width: 30%;
   height: auto;
+}
+
+/*------------SOBRE------------*/
+main .about-us {
+  border: 5px solid red;
+  height: auto;
+}
+
+main .about-us article {
+  border: 5px solid green;
+}
+
+main .about-us article h2 {
+  border: 6px solid cyan;
+}
+
+main .about-us article .about-us-description {
+  border: 8px solid violet;
+}
+
+main .about-us article p {
+  border: 4px solid yellow;
+}
+
+main .about-us aside img {
+  border: 6px solid salmon;
 }
