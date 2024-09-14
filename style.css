@@ -236,7 +236,6 @@ main {
   width: 90%;
   height: 100%;
   font-size: 17.5px;
-
   display: flex;
   align-items: center;
 }
@@ -250,6 +249,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 2;
 }
 
 /* Imagem */
@@ -285,3 +285,77 @@ main {
   width: 20px;
   height: auto;
 }
+
+.services-section {
+  border: 5px solid brown;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.services-section h2 {
+  border: 5px solid khaki;
+  text-align: center;
+}
+
+.services-section .container {
+  border: 5px solid aqua;
+
+  padding: 20px;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-template-rows: repeat(auto-fill, auto);
+  justify-content: center;
+  background-color: #000;
+}
+
+.services-section .services {
+
+  background-color: #f2f2f2;
+  border-radius: 50px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.services-section .services h3 {
+  border: 2px solid yellowgreen;
+  
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+.services-section .services img {
+  width: 80%;
+  height: 200px;
+}
+
+.services-section .services p {
+  border: 3px solid red;
+
+  width: 80%;
+  height: 100px;
+}
+
+.services-section .services button {
+  width: 80%;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  background-color: #1e3a8a;
+  color: white;
+  font-size: 20px;
+}
+
+.services-section .services button:hover {
+  cursor: pointer;
+  background-color: #182e6a;
+}
+
