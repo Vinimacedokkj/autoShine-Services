@@ -287,6 +287,8 @@ main {
   height: auto;
 }
 
+/*------------SERVIÇOS------------*/
+/* Container maior e geral da seção "serviços" */
 .services-section {
   border: 5px solid brown;
 
@@ -297,12 +299,14 @@ main {
   background-color: black;
 }
 
+/* O heading dentro da seção de serviços */
 .services-section h2 {
   border: 5px solid khaki;
   text-align: center;
   color: #fff;
 }
 
+/* Container contendo todos os serviços para agendamento */
 .services-section .container {
   border: 5px solid aqua;
 
@@ -315,6 +319,7 @@ main {
   padding: 30px 0;
 }
 
+/* Bloco pai que armazena cada serviço */
 .services-section .services {
   background-color: #f2f2f2;
   border-radius: 50px;
@@ -326,6 +331,7 @@ main {
   padding: 30px 0;
 }
 
+/* Título dentro do bloco pai branco */
 .services-section .services h3 {
   border: 2px solid yellowgreen;
   
@@ -334,11 +340,13 @@ main {
   margin-bottom: 30px;
 }
 
+/* Imagens dentro do bloco branco de serviços */
 .services-section .services img {
   width: 80%;
   height: 200px;
 }
 
+/* Descrição do serviço */
 .services-section .services p {
   border: 3px solid red;
 
@@ -346,6 +354,7 @@ main {
   height: 100px;
 }
 
+/* Botão do serviço */
 .services-section .services button {
   width: 80%;
   height: 60px;
@@ -356,21 +365,25 @@ main {
   font-size: 20px;
 }
 
+/* Hover do botão */
 .services-section .services button:hover {
   cursor: pointer;
   background-color: #182e6a;
 }
 
+/*------------GALERIA------------*/
 .gallery-section {
   border: 4px solid blue;
 }
 
+/* Heading da galeria */
 .gallery-section .gallery-heading {
   border: 3px solid red;
   text-align: center;
   padding: 30px 0 5px 0;
 }
 
+/* Container pai, container maior incluindo todas as imagens */
 .gallery-section .gallery {
   border: 3px solid orchid;
   width: 100%;
@@ -381,6 +394,7 @@ main {
   grid-template-rows: repeat(7, 100px);
 }
 
+/* Abaixo serão especificados sobre cada serviço */
 .gallery-section .service1 {
   background-image: url('images/gallery/1.jpg');
   background-size: cover;
@@ -481,6 +495,8 @@ main {
   grid-row: 6 / 8;
 }
 
+/*------------FOOTER------------*/
+/* Container pai, container maior */
 .footer {
   border: 3px solid brown;
   display: flex;
@@ -488,23 +504,31 @@ main {
   background-color: #000;
 }
 
+/* Personalizando lista, linnk, heading e parágrafo */
 .footer li, .footer a, .footer h2, .footer ul, .footer p {
   color: #fff;
 }
 
+/* Personalizando todas as Headings do footer */
 .footer h2 {
   font-size: 17px;
   font-weight: 900;
 }
 
+/* Personalizando todas os li da ul do footer */
 .footer li {
   list-style: none;
 }
 
+/* Personalizando todos os links do footer */
 .footer li a {
   text-decoration: none;
 }
 
+/* Dentro do footer, são contidos dois blocos, um para o contato, redes sociais, links e serviços */
+/* O outro é para o copyright */
+
+/* Primeiro bloco dentro do container pai, que é o footer */
 .flex-container {
   border: 3px solid indigo;
   display: flex;
@@ -512,17 +536,21 @@ main {
   height: 30em;
 }
 
+/* Segundo bloco dentro do container pai */
 .alone {
   border: 3px solid turquoise;
   text-align: center;
 }
 
+/* Este é o primeiro bloco dentro do primeiro bloco */
+/* No caso será o bloco pai que envolve o contato e as redes sociais */
 .footer .first-block {
   border: 3px solid green;
   display: flex;
   flex-direction: column;
 }
 
+/* Bloco filho do de cima, porém este é só do contato */
 .footer .first-block .contact {
   border: 3px solid skyblue;
   height: 50%;
@@ -531,6 +559,7 @@ main {
   gap: 15px;
 }
 
+/* Bloco também filho, porém é o de redes sociais */
 .footer .first-block .social-media {
   border: 3px solid wheat;
   height: 50%;
@@ -539,16 +568,19 @@ main {
   gap: 10px;
 }
 
+/* Container pai das imagens (é um container filho do .social-media) */
 .footer .first-block .social-media .image {
   display: flex;
   gap: 10px;
 }
 
+/* Personalizando as redes sociais (no caso o instagram e o facebook) */
 .footer .social-media img {
   width: 30px;
   height: auto;
 }
 
+/* Segundo bloco, personalizando os links úteis */
 .footer .second-block {
   border: 3px solid tomato;
   width: 20em;
@@ -557,11 +589,13 @@ main {
   gap: 20px;
 }
 
+/* Personalizando as headings dentro dos links */
 .footer .second-block h2 {
   position: relative;
   left: 30%;
 }
 
+/* listas dentro dos links úteis */
 .footer .second-block ul {
   display: flex;
   flex-direction: column;
@@ -570,6 +604,7 @@ main {
   left: 30%;
 }
 
+/* Terceiro bloco, o de serviços */
 .footer .third-block {
   border: 3px solid orchid;
 
@@ -578,6 +613,7 @@ main {
   gap: 20px;
 }
 
+/* Listas do terceiro bloco */
 .footer .third-block ul {
   display: flex;
   flex-direction: column;
