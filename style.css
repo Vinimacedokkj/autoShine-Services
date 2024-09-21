@@ -17,8 +17,6 @@ h2 {
 /*------------CABEÇALHO------------*/
 /* Barra cinza contendo todos os elementos */
 header {
-  border: 3px solid orange;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -29,16 +27,12 @@ header {
 
 /* Container pai da imagem (esquerda) */
 .logo {
-  border: 3px solid green;
-
   height: 100%;
   width: auto;
 }
 
 /* Imagem */
 .logo img {
-  border: 2px solid cyan;
-
   width: 100%;
   height: 100%;
   padding: 5px;
@@ -46,28 +40,22 @@ header {
 
 /* Container pai de todos os elmenetos (direita) */
 .nav-bar {
-  border: 3px solid black;
-
-  width: 50%;
+  width: 35%;
   height: 100%;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 2rem;
 }
 
 /* Container da lista não ordenada */
 .nav-bar  ul {
-  border: 2px solid white;
-
   display: flex;
   width: 100%;
 }
 
 /* Cada 'li' da lista não ordenada */
-.nav-bar ul li {
-  border: 3px solid green;
-  
+.nav-bar ul li {  
   list-style: none;
   display: flex;
   justify-content: center;
@@ -78,8 +66,6 @@ header {
 
 /* Todos os 'a' da lista não ordenada (todos os links) */
 .nav-bar ul li a {
-  border: 2px solid cyan;
-
   text-decoration: none;
   color: #fff;
 }
@@ -87,17 +73,13 @@ header {
 /*------------MAIN------------*/
 /* Conteúdo principal contendo todas as informações da página */
 main {
-  border: 3px solid yellow;
-
   height: 100%;
 }
 
 /* Sessão do início, área toda que o background-image cobre */
 .home {
-  border: 4px solid purple;
-
   height: 100vh;
-  background-image: url('images/home-background.jpg');
+  background-image: url('images/others/home-background.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -109,8 +91,6 @@ main {
 
 /* Container pai dos textos (h1 e p) e filho do .home */
 .home .home-description {
-  border: 3px solid blue;
-
   grid-row: 2 / 5;
   grid-column: 2 /10;
 
@@ -122,24 +102,14 @@ main {
 
 /* Título principal h1 (AutoShine Services Estética automotiva) */
 .home .home-description h1 {
-  border: 2px solid white;
-
   color: #fff;
   font-size: 5em;
 }
 
 /* Parágrafo abaixo do título h1 */
 .home .home-description p {
-  border: 2px solid orange;
-
   color: white;
   font-size: 2em;
-}
-
-/* Propriedade que personaliza ambos os containers dos botões */
-/* Irrelevante para o código, pode deletar quando não precisar mais */
-.btn {
-  border: 1px solid white
 }
 
 /* Container div pai do botão ESQUERDO */
@@ -179,18 +149,14 @@ main {
   height: auto;
 }
 
-/*------------SOBRE------------*/
+/*------------SOBRE NÓS------------*/
 /* Sessão que aborda tudo sobre a empresa */
 .about-us {
-  border: 4px solid blue;
-
   height: 100%;
 }
 
 /* Container pai principal da sessão "sobre nós" */
 .about-us article {
-  border: 5px solid red;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -201,15 +167,12 @@ main {
 
 /* Container do título h2 */
 .about-us .first-block {
-  border: 5px solid cyan;
-
   text-align: center;
+  padding-top: 1rem;
 }
 
 /* Container pai dos textos e da imagem */
 .about-us .second-block {
-  border: 5px solid orange;
-
   width: 80%;
   height: 600px;
   display: flex;
@@ -220,8 +183,6 @@ main {
 
 /* Descrição (texto) */
 .about-us .description {
-  border: 3px solid black;
-
   width: 50%;
   height: 100%;
   display: flex;
@@ -233,7 +194,6 @@ main {
 
 /* todos os parágrafos dentro do container da .description */
 .about-us .description p {
-  border: 1px solid purple;
   width: 90%;
   height: 100%;
   font-size: 17.5px;
@@ -243,7 +203,6 @@ main {
 
 /* Container div pai da imagem */
 .about-us .image {
-  border: 5px solid grey;
   height: 100%;
   width: 50%;
 
@@ -255,25 +214,24 @@ main {
 
 /* Imagem */
 .about-us .image img {
-  border: 2px solid blue;
-
   width: 80%;
   height: auto;
 }
 
 /* Container pai de saiba mais */
 .about-us .learn-more {
-  border: 3px solid brown;
+  margin-bottom: 15px;
+}
 
+/* link como texto em saiba mais */
+.about-us .learn-more a {
+  font-size: 15px;
+  text-decoration: none;
+  color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-/* texto saiba mais */
-.about-us .learn-more p {
-  font-size: 15px;
 }
 
 /* hover em saiba mais */
@@ -290,8 +248,6 @@ main {
 /*------------SERVIÇOS------------*/
 /* Container maior e geral da seção "serviços" */
 .services-section {
-  border: 5px solid brown;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,15 +257,13 @@ main {
 
 /* O heading dentro da seção de serviços */
 .services-section h2 {
-  border: 5px solid khaki;
+  padding: 2rem 0;
   text-align: center;
   color: #fff;
 }
 
 /* Container contendo todos os serviços para agendamento */
 .services-section .container {
-  border: 5px solid aqua;
-
   width: 100%;
   gap: 40px;
   display: grid;
@@ -333,8 +287,6 @@ main {
 
 /* Título dentro do bloco pai branco */
 .services-section .services h3 {
-  border: 2px solid yellowgreen;
-  
   text-align: center;
   font-size: 25px;
   margin-bottom: 30px;
@@ -348,8 +300,6 @@ main {
 
 /* Descrição do serviço */
 .services-section .services p {
-  border: 3px solid red;
-
   width: 80%;
   height: 100px;
 }
@@ -372,23 +322,17 @@ main {
 }
 
 /*------------GALERIA------------*/
-.gallery-section {
-  border: 4px solid blue;
-}
-
 /* Heading da galeria */
 .gallery-section .gallery-heading {
-  border: 3px solid red;
   text-align: center;
   padding: 30px 0 5px 0;
 }
 
 /* Container pai, container maior incluindo todas as imagens */
 .gallery-section .gallery {
-  border: 3px solid orchid;
   width: 100%;
   gap: 15px;
-  padding: 15px;
+  padding: 40px 15px;
   display: grid;
   grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
   grid-template-rows: repeat(7, 100px);
@@ -498,10 +442,10 @@ main {
 /*------------FOOTER------------*/
 /* Container pai, container maior */
 .footer {
-  border: 3px solid brown;
   display: flex;
   flex-direction: column;
   background-color: #000;
+  padding-top: 3rem;
 }
 
 /* Personalizando lista, linnk, heading e parágrafo */
@@ -530,7 +474,6 @@ main {
 
 /* Primeiro bloco dentro do container pai, que é o footer */
 .flex-container {
-  border: 3px solid indigo;
   display: flex;
   justify-content: space-around;
   height: 30em;
@@ -538,21 +481,18 @@ main {
 
 /* Segundo bloco dentro do container pai */
 .alone {
-  border: 3px solid turquoise;
   text-align: center;
 }
 
 /* Este é o primeiro bloco dentro do primeiro bloco */
 /* No caso será o bloco pai que envolve o contato e as redes sociais */
 .footer .first-block {
-  border: 3px solid green;
   display: flex;
   flex-direction: column;
 }
 
 /* Bloco filho do de cima, porém este é só do contato */
 .footer .first-block .contact {
-  border: 3px solid skyblue;
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -561,7 +501,6 @@ main {
 
 /* Bloco também filho, porém é o de redes sociais */
 .footer .first-block .social-media {
-  border: 3px solid wheat;
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -582,7 +521,6 @@ main {
 
 /* Segundo bloco, personalizando os links úteis */
 .footer .second-block {
-  border: 3px solid tomato;
   width: 20em;
   display: flex;
   flex-direction: column;
@@ -606,8 +544,6 @@ main {
 
 /* Terceiro bloco, o de serviços */
 .footer .third-block {
-  border: 3px solid orchid;
-
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -620,5 +556,11 @@ main {
   gap: 8px;
 }
 
+.alone .copyright p {
+  display: block;
+  padding: 5px 0;
+  border-top: 1px solid white;
+}
 
+/* -------- PÁGINA 2 - SOBRE NÓS -------- */
 
