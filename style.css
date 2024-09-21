@@ -164,34 +164,30 @@ main {
 
 /*------------SOBRE NÓS------------*/
 /* Sessão que aborda tudo sobre a empresa */
-.about-us {
-  height: 100%;
-}
 
 /* Container pai principal da sessão "sobre nós" */
 .about-us article {
+  height: 130vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  height: 100%;
-  gap: 10px;
+  gap: 30px;
 }
 
 /* Container do título h2 */
 .about-us .first-block {
   text-align: center;
-  padding-top: 1rem;
+  margin-top: 1rem;
 }
 
 /* Container pai dos textos e da imagem */
 .about-us .second-block {
-  width: 80%;
-  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  margin: 0 12%;
+  height: 100%;
 }
 
 /* Descrição (texto) */
@@ -207,28 +203,17 @@ main {
 
 /* todos os parágrafos dentro do container da .description */
 .about-us .description p {
-  width: 90%;
-  height: 100%;
-  font-size: 17.5px;
+  width: 70%;
   display: flex;
-  align-items: center;
-}
-
-/* Container div pai da imagem */
-.about-us .image {
-  height: 100%;
-  width: 50%;
-
-  display: flex;
-  justify-content: center;
   align-items: center;
   flex-shrink: 2;
+  font-size: 1.2rem;
 }
 
 /* Imagem */
-.about-us .image img {
-  width: 80%;
-  height: auto;
+.about-us img {
+  width: auto;
+  height: 500px;
 }
 
 /* Container pai de saiba mais */
@@ -578,7 +563,169 @@ main {
   border-top: 1px solid white;
 }
 
-@media (min-width: 990px) and (max-width: 1135px) {
+/* Quando no mínimo tiver 1400 pixels */
+@media (min-width: 1300px) {
+
+  /* Container pai principal da sessão "sobre nós" */
+  .about-us article {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  /* Container do título h2 */
+  .about-us .first-block {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  /* Container pai dos textos e da imagem */
+  .about-us .second-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+  }
+  
+  /* Descrição (texto) */
+  .about-us .description {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* todos os parágrafos dentro do container da .description */
+  .about-us .description p {
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-shrink: 2;
+    font-size: 1.3rem;
+  }
+  
+  /* Imagem */
+  .about-us img {
+    width: auto;
+    height: 30rem;
+  }
+  
+  /* Container pai de saiba mais */
+  .about-us .learn-more {
+    margin-bottom: 15px;
+  }
+  
+  /* link como texto em saiba mais */
+  .about-us .learn-more a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* hover em saiba mais */
+  .about-us .learn-more:hover {
+    cursor: pointer;
+  }
+  
+  /* Setinha para baixo logo abaixo da palavra "Saiba mais" */
+  .about-us .learn-more img {
+    width: 20px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1299px) {
+  /* Container pai principal da sessão "sobre nós" */
+  .about-us article {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  /* Container do título h2 */
+  .about-us .first-block {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  /* Container pai dos textos e da imagem */
+  .about-us .second-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+  }
+  
+  /* Descrição (texto) */
+  .about-us .description {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* todos os parágrafos dentro do container da .description */
+  .about-us .description p {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-shrink: 2;
+    font-size: 1.3rem;
+  }
+  
+  /* Imagem */
+  .about-us img {
+    width: auto;
+    height: 30rem;
+  }
+  
+  /* Container pai de saiba mais */
+  .about-us .learn-more {
+    margin-bottom: 15px;
+  }
+  
+  /* link como texto em saiba mais */
+  .about-us .learn-more a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* hover em saiba mais */
+  .about-us .learn-more:hover {
+    cursor: pointer;
+  }
+  
+  /* Setinha para baixo logo abaixo da palavra "Saiba mais" */
+  .about-us .learn-more img {
+    width: 20px;
+    height: auto;
+  }
+}
+
+@media (min-width: 990px) and (max-width: 1191px) {
   .services-section .container {
     width: 80%;
     gap: 3em;
@@ -586,6 +733,87 @@ main {
 
   .services-section .container .services {
     flex-grow: 1;
+  }
+}
+
+@media (max-width: 1055px) {
+  /* Container pai principal da sessão "sobre nós" */
+  .about-us article {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  /* Container do título h2 */
+  .about-us .first-block {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  /* Container pai dos textos e da imagem */
+  .about-us .second-block {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* Descrição (texto) */
+  .about-us .description {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* todos os parágrafos dentro do container da .description */
+  .about-us .description p {  
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-shrink: 2;
+    font-size: 1.3rem;
+  }
+  
+  /* Imagem */
+  .about-us img {  
+    width: 31.5rem;
+    height: auto;
+  }
+  
+  /* Container pai de saiba mais */
+  .about-us .learn-more {  
+    margin-bottom: 15px;
+  }
+  
+  /* link como texto em saiba mais */
+  .about-us .learn-more a {  
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* hover em saiba mais */
+  .about-us .learn-more:hover {
+    cursor: pointer;
+  }
+  
+  /* Setinha para baixo logo abaixo da palavra "Saiba mais" */
+  .about-us .learn-more img {
+    width: 20px;
+    height: auto;
   }
 }
 
@@ -600,3 +828,11 @@ main {
     flex-shrink: 2;
   }
 }
+
+
+
+
+
+
+/* -------- PÁGINA 2 - SOBRE NÓS -------- */
+
