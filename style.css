@@ -17,6 +17,8 @@ h2 {
 /*------------CABEÇALHO------------*/
 /* Barra cinza contendo todos os elementos */
 header {
+  border: 3px solid palegoldenrod;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -27,12 +29,16 @@ header {
 
 /* Container pai da imagem (esquerda) */
 .logo {
+  border: 3px solid chartreuse;
+
   height: 100%;
   width: auto;
 }
 
 /* Imagem */
 .logo img {
+  border: 3px solid blue;
+
   width: 100%;
   height: 100%;
   padding: 5px;
@@ -40,6 +46,8 @@ header {
 
 /* Container pai de todos os elmenetos (direita) */
 .nav-bar {
+  border: 3px solid gold;
+
   width: 35%;
   height: 100%;
   display: flex;
@@ -50,12 +58,16 @@ header {
 
 /* Container da lista não ordenada */
 .nav-bar  ul {
+  border: 3px solid green;
+
   display: flex;
   width: 100%;
 }
 
 /* Cada 'li' da lista não ordenada */
-.nav-bar ul li {  
+.nav-bar ul li {
+  border: 3px solid brown;
+  
   list-style: none;
   display: flex;
   justify-content: center;
@@ -66,6 +78,7 @@ header {
 
 /* Todos os 'a' da lista não ordenada (todos os links) */
 .nav-bar ul li a {
+  border: 3px solid palevioletred;
   text-decoration: none;
   color: #fff;
 }
@@ -252,7 +265,9 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
   background-color: black;
+  padding-bottom: 20px;
 }
 
 /* O heading dentro da seção de serviços */
@@ -265,20 +280,21 @@ main {
 /* Container contendo todos os serviços para agendamento */
 .services-section .container {
   width: 100%;
-  gap: 40px;
-  display: grid;
-  grid-template-columns: repeat(3, 25em);
+  gap: 3em;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   background-color: #000;
-  padding: 30px 0;
+  padding: 20px;
 }
 
 /* Bloco pai que armazena cada serviço */
-.services-section .services {
+.services-section .container .services {
   background-color: #f2f2f2;
+  width: 22rem;
   border-radius: 50px;
-  gap: 10px;
   display: flex;
+  gap: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -562,5 +578,25 @@ main {
   border-top: 1px solid white;
 }
 
-/* -------- PÁGINA 2 - SOBRE NÓS -------- */
+@media (min-width: 990px) and (max-width: 1135px) {
+  .services-section .container {
+    width: 80%;
+    gap: 3em;
+  }
 
+  .services-section .container .services {
+    flex-grow: 1;
+  }
+}
+
+@media (max-width: 791px) {
+  .services-section .container {
+    width: 100%;
+    gap: 1.5em;
+  }
+
+  .services-section .container .services {
+    flex-grow: 0;
+    flex-shrink: 2;
+  }
+}
