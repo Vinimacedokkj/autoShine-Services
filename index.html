@@ -5,9 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="AutoShine Services, Estética Automotiva, Serviços de Carros">
   <meta name="description" content="Estética automotiva com diversidade de serviços para seu carro, incluindo lavagem, polimento, higienização e muito mais. Garantimos qualidade!">
-  <link rel="icon" type="image/x-icon" href="images/Logo.png">
+  <link rel="icon" type="image/x-icon" href="images/others/Logo.png">
   <link rel="stylesheet" href="style.css">
   <title>AutoShine Services - Serviços de Lavagem e Polimento para Carros</title>
+  <script src="script.js"></script>
 </head>
 <body>
 
@@ -16,14 +17,14 @@
   <header>
     <!-- 1º bloco (esquerda, contendo a logo) -->
     <div class="logo">
-      <a href="#home"><img src="images/Logo.png" alt="Logo AutoShine Services"></a>
+      <a href="#home"><img src="images/others/Logo.png" alt="Logo AutoShine Services"></a>
     </div>
     
     <!-- 2º bloco (direita, contendo a lista não ordenada com a navegação) -->
     <nav class="nav-bar">
       <ul>
         <li><a href="#home">Início</a></li>
-        <li><a href="#about">Sobre nós</a></li>
+        <li><a href="#about-us">Sobre nós</a></li>
         <li><a href="#services">Serviços</a></li>
         <li><a href="#gallery">Galeria</a></li>
         <li><a href="#contact">Contato</a></li>
@@ -37,7 +38,7 @@
 <!-- Conteúdo principal contendo todas as informações da página -->
   <main>
     <!-- Início, contendo a área inteira da imagem de background -->
-    <div class="home"> 
+    <div id="home" class="home"> 
       <!-- Container pai dos textos (h1 e p) e filho do .home -->
       <div class="home-description">
         <h1>AutoShine Services<br>
@@ -47,17 +48,17 @@
 
       <!-- Botão da esquerda -->
       <div class="btn btn-left">
-        <button><img src="images/Arrow_back.png" alt="Arrow Back"></button>
+        <button><img src="images/Icons/Arrow_back.png" alt="Arrow Back"></button>
       </div>
 
       <!-- Botão da direita -->
       <div class="btn btn-right">
-        <button><img src="images/Arrow_forward.png" alt="Arrow Forward"></button>
+        <button><img src="images/Icons/Arrow_forward.png" alt="Arrow Forward"></button>
       </div>
     </div>
     
 <!-- SOBRE NÓS -->
-    <section class="about-us">
+    <section id="about-us" class="about-us">
       <article>
 
         <!-- Container pai do h2 -->
@@ -83,20 +84,24 @@
         
           <!-- Container pai da imagem -->
           <aside class="image">
-            <img src="images/Logo.png" alt="Logo">
+            <img src="images/others/Logo.png" alt="Logo">
           </aside>
         </div>
 
         <!-- Container do saiba mais -->
         <div class="learn-more">
-          <p>Saiba mais</p>
-          <img src="images/Stat_minus.png" alt="Seta pra saber mais">
+          <a href="learn-more.html">
+            <p>Saiba mais</p>
+            <img src="images/Icons/Stat_minus.png" alt="Seta pra saber mais">
+          </a>
         </div>
+
       </article>
     </section>
 
+    <!-- SERVIÇOS -->
     <!-- Sessão dos serviços -->
-    <section class="services-section">
+    <section id="services" class="services-section">
       <h2>Serviços</h2>
 
       <!-- Container filho de .services, porém contendo todos os outros blocos com os serviços -->
@@ -190,7 +195,7 @@
     </section>
 
     <!-- GALERIA -->
-    <div class="gallery-section">
+    <div id="gallery" class="gallery-section">
       <!-- Título principal da galeria -->
       <div class="gallery-heading">
         <h2>Galeria de trabalhos realizados</h2>
@@ -217,7 +222,7 @@
 
     <!-- FOOTER -->
     <!-- Container maior e principal contendo todos os elementos -->
-    <footer class="footer">
+    <footer id="contact" class="footer">
 
     <!-- Primeiro bloco dentro do container principal, contendo o contato, links e serviços -->
     <div class="flex-container">
@@ -235,8 +240,8 @@
         <div class="social-media">
           <h2>REDES SOCIAIS</h2>
           <div class="image">
-            <img src="images/social meda/instagram.png" alt="Instagram">
-            <img src="images/social meda/facebook.png" alt="Facebook">
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/social meda/instagram.png" alt="Instagram"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/social meda/facebook.png" alt="Facebook"></a>
           </div>
         </div>
       </div>
@@ -276,7 +281,6 @@
     <!-- Uma div que vem por último falando sobre copyright -->
     <div class="alone">
       <div class="copyright">
-        <hr>
         <p>&copy; AutoShine Services 2024. Todos os direitos reservados</p>
       </div>
     </div>
