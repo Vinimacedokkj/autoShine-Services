@@ -13,6 +13,7 @@ body {
 /*------------CABEÇALHO------------*/
 /* Barra cinza contendo todos os elementos */
 header {
+  border: 3px solid red;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
