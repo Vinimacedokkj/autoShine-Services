@@ -370,6 +370,10 @@ main {
   padding: 1.87rem 0 0.31rem 0;
 }
 
+.gallery-section .gallery-heading h2 {
+  font-size: 3rem;
+}
+
 /* Container pai, container maior incluindo todas as imagens */
 .gallery-section .gallery {
   width: 100%;
