@@ -13,31 +13,28 @@ body {
 /*------------CABEÇALHO------------*/
 /* Barra cinza contendo todos os elementos */
 header {
-  border: 3px solid red;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   background-color: #434343;
-  height: 9rem;
+  height: 8rem;
 }
 
 /* Container pai da imagem (esquerda) */
 .logo {
-  height: 100%;
-  width: auto;
+  margin-left: 10px;
 }
 
 /* Imagem */
 .logo img {
-  width: 100%;
-  height: 100%;
-  padding: 0.31rem;
+  width: auto;
+  height: 100px;
 }
 
 /* Container pai de todos os elmenetos (direita) */
 .nav-bar {
-  width: 60rem;
+  width: 50rem;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -107,7 +104,8 @@ main {
 /* Parágrafo abaixo do título h1 */
 .home .home-description p {
   color: white;
-  font-size: 2em;
+  font-size: 2.4em;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 1)
 }
 
 /* Container div pai do botão ESQUERDO */
@@ -193,7 +191,7 @@ main {
 
 /* todos os parágrafos dentro do container da .description */
 .about-us .description p {
-  width: 70%;
+  width: 90%;
   display: flex;
   align-items: center;
   flex-shrink: 1;
@@ -213,7 +211,7 @@ main {
 
 /* link como texto em saiba mais */
 .about-us .learn-more a {
-  font-size: 1.20rem;
+  font-size: 1.50rem;
   text-decoration: none;
   color: black;
   display: flex;
@@ -266,25 +264,41 @@ main {
 
 /* Bloco pai que armazena cada serviço */
 .services-section .container .services {
-  border: 4px solid red;
-  
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  width: 30rem;
-  height: 650px;
+  width: 33rem;
+  height: 46rem;
   border-radius: 50px;
   gap: 3.75rem;
   padding: 1.85rem 0;
+  box-sizing: border-box;
+}
+
+/* Primeira div dentro do bloco pai armazenando cada serviço */
+.services-div1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+/* Adicionando um gap maior para aqueles que têm pouco texto */
+.services .services-div1-mod {
+  gap: 50px;
+}
+
+/* Personalizando alguns serviços específicos: 3, 8 e 11 */
+#third-service, #eighth-service, #eleventh-service {
+  gap: 30px;
 }
 
 /* Cada elemento abaixo está dentro de uma div */
 /* DIV do h3. Texto presente nos serviços */
 .services .heading3 {
-  border: 3px solid purple;
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -292,32 +306,27 @@ main {
 
 /* Alterando as propriedades do h3 dentro do bloco branco de serviços */
 .services .heading3 h3 {
-  border: 3px solid greenyellow;
-  
+  padding-top: 10px;
+  text-align: center;
   font-size: 2.75rem;
 }
 
 /* DIV da imagem (não faz nenhuma alteração na imagem em si) */
 .services .image {
-  border: 3px solid green;
-  
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 70%;
 }
 
 /* Alterando as propriedades da imagem dentro do bloco branco de serviços */
 .services-section .services img {
-  border: 3px solid hsl(221, 39.3%, 11%);
-  
-  width: 80%;
-  height: 12.5rem;
+  width: 100%;
+  height: auto;
 }
 
 /* DIV do texto */
 .services .text {
-  border: 3px solid blue;
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -325,17 +334,13 @@ main {
 
 /* Descrição do serviço */
 .services-section .services p {
- border: 3px solid hsl(0, 72.2%, 50.6%);
-  
   width: 90%;
   height: 6.25rem;
   font-size: 1.25rem;
 }
 
-/* DIV do botão */
-.services .button {
-  border: 3px solid yellow;
-  
+/* DIV pai do botão */
+.services-section .services-div2 {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -343,16 +348,13 @@ main {
 }
 
 /* Botão do serviço */
-.services-section .services button {
-  border: 5px solid red;
-  
+.services-section .services .services-div2 button {
   width: 80%;
   height: 3.75rem;
   border-radius: 1.87rem;
- 
   background-color: #1e3a8a;
   color: white;
-  font-size: 1.25rem;
+  font-size: 1.55rem;
 }
 
 /* Hover do botão */
@@ -611,9 +613,6 @@ main {
 }
 
 /* ----------------------------------------------------Começo das media queries---------------------------------------------------- */
-@media (max-width: 1920px) {
-  
-}
 
 @media (max-width: 1440px) {
   
