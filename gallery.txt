@@ -1,3 +1,5 @@
+TXT apenas para armazenar uma versão antiga da galeria que fiz
+
 .gallery-section .gallery-heading {
   text-align: center;
   padding: 1.87rem 0 0.31rem 0;
