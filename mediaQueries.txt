@@ -1,3 +1,5 @@
+TX apenas para armazenar uma versão antiga das media queries que eu fiz
+
 @media (max-width: 1920px) {
   
 }
